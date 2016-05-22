@@ -6,4 +6,8 @@
   @include span-columns(12);
 
   padding: ($base-spacing-unit * 2);
+
+  .brand{
+    border-bottom: 2px solid;
+  }
 }
