@@ -1,11 +1,20 @@
 <div class="header">
 	<div class="header__inner">
-		<a href="/"><span class="logo">{% include "../images/logo.svg" %}</span></a>
-		<nav class="main-nav">
-			<a class="{{ 'active' if path == 'work' }}" href="/work/">Work</a>
-			<a class="{{ 'active' if path == 'team' }}" href="/team/">Team</a>
-			<a class="{{ 'active' if path == 'contact' }}" href="/contact/">Contact</a>
-			<a href="{{ site.blogUrl }}">Blog</a>
-		</nav>
+		<div class="header__brand">
+			<a href="/"><span class="logo">{% include "../images/logo.svg" %}</span></a>
+		</div>
+		<div class="header__nav">
+			<div class="main-nav js-main-nav">
+				<a class="{{ 'active' if path == 'services' }}" href="/services/">Services</a>
+				<a class="{{ 'active' if path == 'pricing' }}" href="/pricing/">Pricing</a>
+				<a class="{{ 'active' if path == 'contact' }}" href="/contact/">Contact</a>
+				<a class="main-nav__dropdown-toggle js-nav-dropdown-toggle" href="javascript:;">Menu<i class="caret caret--down main-nav__dropdown-caret"></i></a>
+				<div class="main-nav__dropdown">
+					<a class="{{ 'active' if path == 'work' }}" href="/work/">Work</a>
+					<a class="{{ 'active' if path == 'team' }}" href="/team/">Team</a>
+					<a href="{{ site.blogUrl }}">Blog</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

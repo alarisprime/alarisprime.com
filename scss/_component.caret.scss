@@ -1,0 +1,27 @@
+$caret--size: .6em / $modular-scale-ratio;
+
+.caret {
+  display: inline-block;
+  width: $caret--size;
+  height: $caret--size;
+  margin: 0 ($base-horizontal-spacing-unit / 6);
+
+  vertical-align: middle;
+  content: ' ';
+}
+
+.caret--down {
+  @include triangle($caret--size, currentColor, down);
+}
+
+.caret--up {
+  @include triangle($caret--size, currentColor, up);
+}
+
+.caret--right {
+  @include triangle($caret--size, currentColor, right);
+}
+
+.caret--left {
+  @include triangle($caret--size, currentColor, left);
+}

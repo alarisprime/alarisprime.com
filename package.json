@@ -27,12 +27,14 @@
     "bourbon": "4.2.7",
     "bourbon-neat": "1.8.0",
     "browser-sync": "^2.14.0",
+    "debounce": "^1.0.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-filter": "^4.0.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
+    "gulp-insert": "^0.5.0",
     "gulp-load-plugins": "^1.2.4",
     "gulp-metalsmith": "^1.0.0",
     "gulp-plumber": "^1.1.0",
@@ -51,6 +53,7 @@
     "gulp-xo": "^0.12.0",
     "imports-loader": "^0.6.5",
     "md5": "^2.1.0",
+    "merge-stream": "^1.0.0",
     "metalsmith": "2.1.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-define": "2.0.1",
@@ -60,17 +63,13 @@
     "metalsmith-markdownit": "^0.4.0",
     "metalsmith-permalinks": "0.5.0",
     "nunjucks": "2.4.2",
+    "qgen": "^1.1.1",
     "run-sequence": "^1.2.2",
     "sanitize.css": "git+https://github.com/ciju/sanitize.css.git",
     "through2": "^2.0.1",
     "turbolinks": "^5.0.0",
     "webfontloader": "1.6.26",
     "webpack": "^1.13.1"
-  },
-  "devDependencies": {
-    "gulp-insert": "^0.5.0",
-    "merge-stream": "^1.0.0",
-    "qgen": "^1.1.1"
   },
   "xo": {
     "envs": [
