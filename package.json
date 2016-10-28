@@ -54,7 +54,7 @@
     "gulp-xo": "^0.14.0",
     "imports-loader": "^0.6.5",
     "md5": "^2.2.1",
-    "metalsmith": "2.2.0",
+    "metalsmith": "2.2.1",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-define": "2.0.1",
     "metalsmith-hyphenate": "^0.4.1",
