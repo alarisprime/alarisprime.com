@@ -1,6 +1,7 @@
 ---
 name: Anish Dasgupta
 email: anish519@gmail.com
+photoBrightness: darker
 socialNetworks:
   - title: Linkedin
     url: https://www.linkedin.com/in/anish-dasgupta-7394a536
