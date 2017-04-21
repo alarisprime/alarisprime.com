@@ -24,7 +24,7 @@
     "accoutrement-color": "^2.1.0",
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",
-    "babel-loader": "6.4.1",
+    "babel-loader": "7.0.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
     "bourbon": "4.3.4",
