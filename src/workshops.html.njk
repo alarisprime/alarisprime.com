@@ -1,0 +1,42 @@
+---
+title: Workshops
+---
+
+{% extends "./layouts/base.njk" %}
+
+{% from "./macros/contact-trigger-tag.njk" import contactTriggerTag %}
+
+{% block content %}
+<article class="article">
+	<div class="article__header">
+		<h2 class="article__title">{{title}}</h2>
+	</div>
+	<div class="article__content">
+		<div class="media-object media-object--space-out">
+			<div class="media-object__figure">
+				<h4>Good Enough Design™ for Responsive Web Apps</h4>
+				<dl>
+					<dt>Duration</dt>
+					<dd>2-4 days</dd>
+					<dt>Participants</dt>
+					<dd>3-8 people</dd>
+					<dt>Pricing</dt>
+					<dd>$4,000<br>(&#8377; 2,50,000)</dd>
+				</dl>
+			</div>
+			<div class="media-object__content">
+				<p>Designing and developing responsive web is still a mystery for many team. Through this workshop you should be able to create a good enough design system and a custom front-end patterns for you web app that works across devices of any screensizes – phones,tablets, desktops or TVs. Through smart choices we can speed up the design phase. Through a living style guide we speed up the development. With the living style guide, maintain and scale your web app with out breaking your teams brains. All this will help you to spend the energy – wasted on fights between your development and design teams – on making a better product.</p>
+				<br>
+				<p>{{ contactTriggerTag(isButton=true, text = 'Book this workshop', email = site.contactEmail, subject = 'Good Enough Design™ workshop',
+				message='Hello,
+
+I’m interested in Good Enough Design™ workshop.
+How do we proceed?
+
+Best
+__Your Name__') }}</p>
+			</div>
+		</div>
+	</div>
+</article>
+{% endblock %}
