@@ -24,7 +24,7 @@ const initOverlayContactForm = () => {
 				overlayEl.querySelector('#contact-form-message').value = message
 			}
 
-			overlayEl.classList.toggle('overlay--open');
+			document.body.classList.toggle('overlay-open');
 		};
 
 		const triggerElements = document.querySelectorAll('.js-overlay-open, .js-overlay-close');

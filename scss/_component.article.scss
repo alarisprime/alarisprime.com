@@ -71,3 +71,46 @@
   min-height: #{(100 * 2 / 3)}vh;
 }
 
+.overlay {
+  .article,
+  .article__inner {
+    margin: 0;
+    height: 100%;
+  }
+
+  .article__inner {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+
+  .article__header,
+  .article__content,
+  .article__footer {
+    margin: 0;
+    padding: $space-s $space-m;
+    width: 100%;
+  }
+
+  .article__header,
+  .article__footer {
+    flex: none;
+  }
+
+  .article__header {
+    border-bottom: $border;
+  }
+
+  .article__content {
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .article__footer {
+    align-self: flex-end;
+    padding-top: 0;
+    padding-bottom: $space-m;
+    border-top: $border;
+  }
+}
