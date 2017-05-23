@@ -1,19 +1,35 @@
 const initOverlayContactForm = () => {
 	document.addEventListener('turbolinks:load', () => {
-		const emptyArray = [];
-		const overlayEl = document.querySelectorAll('.overlay');
+		const overlayEl = document.querySelector('.overlay');
+
+		const subject = overlayEl.querySelector('#contact-form-subject').value;
+		const message = overlayEl.querySelector('#contact-form-message').value;
 
 		const toggleOverlay = e => {
 			e.preventDefault();
 
-			emptyArray.forEach.call(overlayEl, el => {
-				el.classList.toggle('overlay--open');
-			});
+			const el = e.target;
+			const overrideSubject = el.getAttribute('data-subject');
+			const overrideMessage = el.getAttribute('data-message');
+
+			if (overrideSubject) {
+				overlayEl.querySelector('#contact-form-subject').value = overrideSubject;
+			} else {
+				overlayEl.querySelector('#contact-form-subject').value = subject;
+			}
+
+			if (overrideMessage) {
+				overlayEl.querySelector('#contact-form-message').value = overrideMessage;
+			} else {
+				overlayEl.querySelector('#contact-form-message').value = message;
+			}
+
+			document.body.classList.toggle('overlay-open');
 		};
 
 		const triggerElements = document.querySelectorAll('.js-overlay-open, .js-overlay-close');
 
-		emptyArray.forEach.call(triggerElements, el => {
+		triggerElements.forEach(el => {
 			el.addEventListener('click', toggleOverlay, false);
 		});
 	});

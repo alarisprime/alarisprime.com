@@ -31,7 +31,8 @@ h4,
 blockquote,
 figure,
 table,
-ul {
+ul,
+dl {
   margin: 0;
 }
 
@@ -182,20 +183,41 @@ abbr {
   font-feature-settings: $font-features, 'smcp';
 }
 
-.small-caps {
-  @extend %small-caps;
-}
-
 %caps-to-small-caps {
   font-feature-settings: $font-features, 'c2sc';
 }
 
-.caps-to-small-caps {
-  @extend %caps-to-small-caps;
-}
-
 %all-to-small-caps {
   font-feature-settings: $font-features, 'smcp', 'c2sc';
+}
+
+// dl {}
+
+dt,
+dd {
+  font-size: modular-scale(-1);
+  line-height: $line-height-heading;
+}
+
+dt {
+  @include font-family-alt;
+  margin-bottom: 0;
+  color: color('text-light');
+  font-feature-settings: $font-features, 'smcp', 'c2sc';
+}
+
+dd {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.small-caps {
+  @extend %small-caps;
+}
+
+.caps-to-small-caps {
+  @extend %caps-to-small-caps;
 }
 
 .all-to-small-caps {

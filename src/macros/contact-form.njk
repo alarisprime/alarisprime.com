@@ -4,14 +4,14 @@
 {% set classNames = 'article--full-width' %}
 {% endif %}
 <article class="article {{ classNames }}">
-	<div class="article__inner">
-		<div class="article__header">
-			<h1 class="article__title">{{ title }}</h1>
-		</div>
-		<div class="article__content article__content--column">
-			<form class="form" id="contact-form"
-				action="https://formspree.io/{{ email }}"
-				method="POST">
+	<form class="form" id="contact-form"
+		action="https://formspree.io/{{ email }}"
+		method="POST">
+		<div class="article__inner">
+			<div class="article__header">
+				<h1 class="article__title">{{ title }}</h1>
+			</div>
+			<div class="article__content article__content--column">
 				<div class="form__group">
 					<label class="input-label" for="contact-form-name">Name</label>
 					<input class="input-control" type="text" name="name" id="contact-form-name" required>
@@ -34,13 +34,8 @@ How do we proceed?
 Best
 __Your Name__</textarea>
 				</div>
-				{#
-				<div class="form__group form__group--minor">
-					<label>
-						<input class="checkbox" type="checkbox" name="newsletter"> I would like to subscribe the <a class="link link--minor" href="{{newsletterSignupUrl}}">Alaris Prime Gazette</a>.
-					</label>
-				</div>
-				#}
+			</div>
+			<div class="article__footer">
 				<input type="text" name="_gotcha" style="display:none" />
 				<input type="hidden" name="page-identifier" style="display:none" value="{{pageIdentifier}}" />
 				<input type="hidden" name="_next" value="{{ successUrl }}" />
@@ -48,8 +43,8 @@ __Your Name__</textarea>
 				{% if isDiscardable %}
 				<a href="javascript:;" class="button js-overlay-close">Discard</a>
 				{% endif %}
-			</form>
+			</div>
 		</div>
-	</div>
+	</form>
 </article>
 {% endmacro %}
