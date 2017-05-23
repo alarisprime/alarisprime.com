@@ -4,7 +4,8 @@
 
 // .article__title {}
 
-.article__header {
+.article__header,
+.article__footer {
   @include grid-column(7);
 
   @include grid-media($neat-grid-medium) {
@@ -54,6 +55,7 @@
 
 .article--full-width {
   .article__header,
+  .article__footer,
   .article__content--column {
     @include grid-column(7);
 
