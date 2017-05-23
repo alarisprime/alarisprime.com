@@ -74,23 +74,23 @@
 .overlay {
   .article,
   .article__inner {
-    margin: 0;
     height: 100%;
+    margin: 0;
   }
 
   .article__inner {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   .article__header,
   .article__content,
   .article__footer {
-    margin: 0;
-    padding: $space-s $space-m;
     width: 100%;
+    padding: $space-s $space-m;
+    margin: 0;
   }
 
   .article__header,
@@ -103,8 +103,8 @@
   }
 
   .article__content {
-    overflow-y: auto;
     height: 100%;
+    overflow-y: auto;
   }
 
   .article__footer {
