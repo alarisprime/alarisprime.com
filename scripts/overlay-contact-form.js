@@ -13,15 +13,15 @@ const initOverlayContactForm = () => {
 			const overrideMessage = el.getAttribute('data-message');
 
 			if (overrideSubject) {
-				overlayEl.querySelector('#contact-form-subject').value = overrideSubject
+				overlayEl.querySelector('#contact-form-subject').value = overrideSubject;
 			} else {
-				overlayEl.querySelector('#contact-form-subject').value = subject
+				overlayEl.querySelector('#contact-form-subject').value = subject;
 			}
 
 			if (overrideMessage) {
-				overlayEl.querySelector('#contact-form-message').value = overrideMessage
+				overlayEl.querySelector('#contact-form-message').value = overrideMessage;
 			} else {
-				overlayEl.querySelector('#contact-form-message').value = message
+				overlayEl.querySelector('#contact-form-message').value = message;
 			}
 
 			document.body.classList.toggle('overlay-open');
