@@ -14,7 +14,7 @@ html {
   }
 
   @include bp(large) {
-    font-size: percentage(30 / 16); // 17px → 30px
+    font-size: percentage(28 / 16); // 17px → 28px
   }
 
 
