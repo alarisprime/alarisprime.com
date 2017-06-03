@@ -46,20 +46,26 @@ gulp.task('metalsmith', cb => {
 			'images/**'
 		]))
 		.use(require('metalsmith-collections')({
+			members: {
+				pattern: 'members/**/*',
+				sortBy: 'name'
+			},
 			projects: {
 				pattern: 'projects/**/*',
 				sortBy: 'date',
 				reverse: true
 			},
-			members: {
-				pattern: 'members/**/*',
-				sortBy: 'name'
+			testimonials: {
+				pattern: 'testimonials/**/*',
+				sortBy: 'order',
+				reverse: true
 			}
 		}))
 		.use(md)
 		.use(require('metalsmith-ignore')([
 			'projects/*',
-			'members/*'
+			'members/*',
+			'testimonials/*'
 		]))
 		.use(require('metalsmith-in-place')({
 			engineOptions: {
