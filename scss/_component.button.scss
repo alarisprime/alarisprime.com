@@ -14,7 +14,6 @@ $height-button-small: $space-m;
   vertical-align: middle;
   background-color: transparent;
   border: $border-width-l $border-style;
-  border-radius: $border-radius-circle;
   box-shadow: none;
 
   @include bp(medium) {
@@ -28,6 +27,11 @@ $height-button-small: $space-m;
     text-shadow: none;
     cursor: pointer;
     box-shadow: none;
+  }
+
+  &:active {
+    position: relative;
+    top: 2px;
   }
 }
 
