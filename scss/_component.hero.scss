@@ -1,10 +1,10 @@
 .hero {
   @include grid-container;
+  @include margin-top-1;
 }
 
 .hero__text-unit {
   @include grid-column(7);
-  padding-bottom: $space-xl;
 
   @include grid-media($neat-grid-medium) {
     @include grid-column(6);

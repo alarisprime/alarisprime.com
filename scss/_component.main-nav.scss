@@ -15,7 +15,7 @@
     &:active,
     &:focus {
       color: color('brand');
-      opacity: 1;
+      opacity: $opacity-100;
     }
 
     &.active {

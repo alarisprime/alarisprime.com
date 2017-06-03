@@ -117,7 +117,7 @@ $space-xl:  $root-space * 4;
 $space-xxl: $root-space * 8;
 
 // ---
-// Spaces
+// Sizes
 // ---
 
 $size-xxs: $root-space * 2;
@@ -143,6 +143,15 @@ $border-style: solid;
 $border:    $border-width $border-style color('border');
 $border-l:  $border-width-l $border-style color('border');
 $border-xl: $border-width-xl $border-style color('border');
+
+// ---
+// Opacities
+// ---
+$opacity-100: 1;
+$opacity-80: .85;
+$opacity-30: .35;
+$opacity-10: .15;
+$opacity-05: .05;
 
 // ---
 // Animation

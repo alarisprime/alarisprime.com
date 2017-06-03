@@ -1,10 +1,10 @@
 .hero-quote {
   @include grid-container;
+  @include margin-top-1;
 }
 
 .hero-quote__inner {
   @include grid-column(7);
-  padding: $space-l 0;
   font-weight: $font-weight-bold;
   color: color('text');
 
@@ -16,13 +16,11 @@
   @include grid-media($neat-grid-large) {
     @include grid-column(11);
     @include grid-push(2);
-    padding-top: $space-l;
-    padding-bottom: $space-l;
   }
 }
 
 .hero-quote__quote {
-  min-height: 56.27813555vmin;
+  padding-bottom: $space-xl;
   margin: 0;
   font-size: modular-scale(1);
   line-height: $line-height-heading;
@@ -32,7 +30,7 @@
   }
 
   @include bp(medium) {
-    min-height: 0;
+    padding-bottom: 0;
   }
 }
 

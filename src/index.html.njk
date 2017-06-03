@@ -5,6 +5,8 @@ description: We design and build beautiful and performant products.
 {% extends "./layouts/base.njk" %}
 
 {% from "./macros/contact-trigger-tag.njk" import contactTriggerTag %}
+{% from "./macros/divider.njk" import divider %}
+{% from "./macros/testimonials.njk" import testimonials %}
 
 {% block content %}
 <div class="hero-quote">
@@ -30,4 +32,7 @@ description: We design and build beautiful and performant products.
 		<p>{{ contactTriggerTag(isButton=true, text = 'Let us help you in your next project', email = site.contactEmail) }}</p>
 	</div>
 </div>
+
+{{ divider() }}
+{{ testimonials(collections.testimonials) }}
 {% endblock %}

@@ -1,0 +1,13 @@
+{% from "./testimonial.njk" import testimonial %}
+
+{% macro testimonials(collection, count=0) %}
+<article class="article">
+	<div class="article__inner">
+		<div class="article__content article__content--column">
+			{% for t in collection %}
+				{{ testimonial(t.contents, t.name, t.title, t.company) }}
+			{% endfor %}
+		</div>
+	</div>
+</article>
+{% endmacro %}

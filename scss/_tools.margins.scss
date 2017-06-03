@@ -1,0 +1,21 @@
+@mixin margin-top-1 {
+  @include grid-media($neat-grid-medium) {
+    margin-top: $space-m;
+  }
+
+  @include grid-media($neat-grid-large) {
+    margin-top: $space-l;
+  }
+}
+
+@mixin margin-top-2 {
+  margin-top: $space-m;
+
+  @include grid-media($neat-grid-medium) {
+    margin-top: $space-l;
+  }
+
+  @include grid-media($neat-grid-large) {
+    margin-top: $space-xl;
+  }
+}

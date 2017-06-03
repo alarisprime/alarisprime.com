@@ -1,5 +1,6 @@
 .article {
   @include grid-container;
+  @include margin-top-1;
 }
 
 // .article__title {}

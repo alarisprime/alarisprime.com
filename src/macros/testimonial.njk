@@ -1,0 +1,10 @@
+{% macro testimonial(contents, name, title, company) %}
+<div class="reco">
+	<div class="reco__content">{{ contents | safe }}</div>
+	<div class="reco__author-card">
+		{{- name -}}
+		{%- if title%}, {{ title | safe }}{% endif -%}
+		{%- if company%}, {{ company | safe }}{% endif %}
+	</div>
+</div>
+{% endmacro %}
