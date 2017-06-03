@@ -69,15 +69,13 @@ $colors: (
   'grey-light':   'grey' ('tint': 27%),
   'grey-dark':    'grey' ('shade': 27%),
 
-  'brand-dark':   'brand' ('shade': 10%),
-
   'bg':           'highlight',
   'text':         'shadow',
   'text-light':   'grey-light',
   'text-lighter': 'grey-lighter',
   'link':         'brand',
   'link-light':   'grey' ('tint': 75%),
-  'link-hover':   'brand' ('shade': 15%),
+  'link-hover':   'brand' ('shade': 20%),
   'border':       'grey-lighter' ('tint': 30%),
   'border-dark':  'grey-lighter' ('shade': 20%),
 );
