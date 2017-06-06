@@ -1,4 +1,5 @@
 ---
+keyMember: true
 name: Brajeshwar Oinam
 email: brajeshwar@oinam.com
 photoBrightness: darker

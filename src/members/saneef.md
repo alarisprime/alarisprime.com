@@ -1,4 +1,5 @@
 ---
+keyMember: true
 name: Saneef Ansari
 email: saneef@gmail.com
 photoBrightness: darker

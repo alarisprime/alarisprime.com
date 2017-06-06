@@ -15,7 +15,14 @@ description: The people of Alaris Prime.
 	</div>
 	<div class="article__content">
 		{% for member in collections.members %}
-			{{ memberSnippet(member, md5, objectKeys, console) }}
+			{% if member.keyMember %}
+				{{ memberSnippet(member, md5, objectKeys, console) }}
+			{% endif %}
+		{% endfor %}
+		{% for member in collections.members %}
+			{% if not member.keyMember %}
+				{{ memberSnippet(member, md5, objectKeys, console) }}
+			{% endif %}
 		{% endfor %}
 	</div>
 </article>
