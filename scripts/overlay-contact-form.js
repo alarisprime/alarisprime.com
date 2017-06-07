@@ -11,6 +11,7 @@ const initOverlayContactForm = () => {
 			const el = e.target;
 			const overrideSubject = el.getAttribute('data-subject');
 			const overrideMessage = el.getAttribute('data-message');
+			const extraFieldGroup = el.getAttribute('data-extra-field-group');
 
 			if (overrideSubject) {
 				overlayEl.querySelector('#contact-form-subject').value = overrideSubject;
@@ -22,6 +23,10 @@ const initOverlayContactForm = () => {
 				overlayEl.querySelector('#contact-form-message').value = overrideMessage;
 			} else {
 				overlayEl.querySelector('#contact-form-message').value = message;
+			}
+
+			if (extraFieldGroup) {
+				overlayEl.querySelector(`.js-form-group-${extraFieldGroup}`).classList.remove('form__group--hidden');
 			}
 
 			document.body.classList.toggle('overlay-open');

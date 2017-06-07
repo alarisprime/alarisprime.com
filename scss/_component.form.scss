@@ -16,6 +16,11 @@
   border: $border;
   outline: none;
 
+  @include bp(large) {
+    padding: ($space-m / 4);
+    font-size: modular-scale(-1);
+  }
+
   &:focus,
   &:active {
     border-color: color('border')-dark;
@@ -29,11 +34,12 @@
 .input-textarea {
   height: $space-xxl;
   resize: none;
-
-  // @include bp(medium) {}
 }
 
 // .form__group {}
+.form__group--hidden {
+  display: none;
+}
 
 .form__group--minor {
   // margin-top: -1 * $space-m;
