@@ -94,6 +94,7 @@ $font-weight-bold: 600;
 $line-height-px:      $root-line-height * 1px;
 $line-height:         $root-line-height / $root-font-size-px;
 $line-height-heading: 1.33333;
+$line-height-solid:   1;
 
 $font-features: 'kern', 'liga'; //TODO: check 'frac' and add if required.
 
@@ -106,13 +107,14 @@ $padding-bottom-adjust-alt-family: .166666667em; // 5px / 30px
 // Spaces
 // ---
 
-$space-xxs: $root-space / 8;
-$space-xs:  $root-space / 4;
-$space-s:   $root-space / 2;
-$space-m:   $root-space;
-$space-l:   $root-space * 2;
-$space-xl:  $root-space * 4;
-$space-xxl: $root-space * 8;
+$space-xxs:  $root-space / 8;
+$space-xs:   $root-space / 4;
+$space-s:    $root-space / 2;
+$space-m:    $root-space;
+$space-l:    $root-space * 2;
+$space-xl:   $root-space * 4;
+$space-xxl:  $root-space * 8;
+$space-xxxl: $root-space * 16;
 
 // ---
 // Sizes

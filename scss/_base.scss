@@ -248,3 +248,31 @@ dd {
 .text-align-center {
   text-align: center;
 }
+
+.font-family-alt {
+  @include font-family-alt;
+}
+
+.light {
+  color: color('text-light');
+}
+
+.mini {
+  font-size: modular-scale(0);
+
+  @include bp(medium) {
+    font-size: modular-scale(-1);
+  }
+}
+
+.micro {
+  font-size: modular-scale(-1);
+
+  @include bp(medium) {
+    font-size: modular-scale(-2);
+  }
+}
+
+.mt0 {
+  margin-top: 0;
+}
