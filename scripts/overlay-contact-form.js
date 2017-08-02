@@ -1,3 +1,25 @@
+const disableDocumentScroll = () => {
+	const scrollPosition = window.pageYOffset;
+	document.documentElement.setAttribute('data-scroll', scrollPosition);
+
+	// Might Need: document.documentElement.style.overflow = 'hidden';
+	document.documentElement.style.position = 'fixed';
+	document.documentElement.style.top = `-${scrollPosition}px`;
+};
+
+const enableDocumentScroll = () => {
+	const scrollPosition = document.documentElement.getAttribute('data-scroll');
+	document.documentElement.setAttribute('data-scroll', null);
+
+	// Might Need: document.documentElement.style.overflow = '';
+	document.documentElement.style.position = '';
+	document.documentElement.style.top = '';
+
+	if (scrollPosition) {
+		window.scrollTo(0, parseInt(scrollPosition, 10));
+	}
+};
+
 const initOverlayContactForm = () => {
 	document.addEventListener('turbolinks:load', () => {
 		const overlayEl = document.querySelector('.overlay');
@@ -29,7 +51,16 @@ const initOverlayContactForm = () => {
 				overlayEl.querySelector(`.js-form-group-${extraFieldGroup}`).classList.remove('form__group--hidden');
 			}
 
-			document.body.classList.toggle('overlay-open');
+			const overlayActiveClass = 'overlay-open';
+			if (document.body.classList.contains(overlayActiveClass)) {
+				// Hide overlay
+				document.body.classList.remove(overlayActiveClass);
+				enableDocumentScroll();
+			} else {
+				// Show overlay
+				disableDocumentScroll();
+				document.body.classList.add(overlayActiveClass);
+			}
 		};
 
 		const triggerElements = document.querySelectorAll('.js-overlay-open, .js-overlay-close');
