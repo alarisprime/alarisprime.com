@@ -3,6 +3,7 @@ dist/
 s3_website.yml
 *.sublime-project
 *.sublime-workspace
+package-lock.json
 
 # Ignore hidden folders #
 # This takes care of .tmp, .sass-cache, and many others #
