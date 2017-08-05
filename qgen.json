@@ -1,4 +1,5 @@
 {
+  "helpers": "./qgen-helpers.js",
   "templates": {
     "page": {
       "dest": "./src"

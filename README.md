@@ -27,15 +27,29 @@ $ yarn # install dependencies
 	|-- scss
 	+-- scripts
 
-### Adding a new page
+### Adding Content
 
-[qGen](https://github.com/alarisprime/qgen) generator for new pages is in place. To create a new page with slug `hello-page` and title `Hello World`, run:
+[qGen](https://github.com/alarisprime/qgen) generator for new pages and person are in place.
+
+#### A New Page
+
+To create a new page with title `Hello World`, run:
 
 ```bash
-npm run qgen -- page ./contents --title "Hello World" --slug hello-world
+npm run qgen -- page ./contents --title "Hello World"
 ```
 
 The base file will be generated at `./contents/hello-world.html`.
+
+#### A New Person
+
+To create a new persone 'Jane Doe', run:
+
+```bash
+npm run qgen -- person ./contents --name "Jane Doe" --email "jane@example.com"
+```
+
+The base file will be generated at `./members/jane-doe.html`.
 
 ### Development server
 
