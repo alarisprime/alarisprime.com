@@ -73,7 +73,7 @@
   "devDependencies": {
     "gulp-insert": "^0.5.0",
     "merge-stream": "^1.0.1",
-    "qgen": "^1.2.1"
+    "qgen": "^2.0.0"
   },
   "xo": {
     "parserOptions": {
