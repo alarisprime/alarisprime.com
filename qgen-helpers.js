@@ -1,3 +1,4 @@
+/* eslint-disable object-shorthand */
 const slugify = require('slugify');
 
 const slug = function (str) {
