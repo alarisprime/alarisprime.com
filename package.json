@@ -51,7 +51,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.2",
     "gulp-util": "^3.0.8",
-    "gulp-xo": "^0.15.0",
+    "gulp-xo": "^0.16.0",
     "imports-loader": "^0.7.1",
     "jstransformer-nunjucks": "^0.3.0",
     "md5": "^2.2.1",
