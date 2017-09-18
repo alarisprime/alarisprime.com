@@ -21,9 +21,9 @@
   "license": "CC0 1.0 Universal",
   "homepage": "https://alarisprime.com",
   "dependencies": {
-    "accoutrement-color": "^2.1.1",
-    "autoprefixer": "^7.1.2",
-    "babel-core": "^6.25.0",
+    "accoutrement-color": "^2.2.1",
+    "autoprefixer": "^7.1.4",
+    "babel-core": "^6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
@@ -44,10 +44,10 @@
     "gulp-rev-replace": "^0.4.3",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
-    "gulp-sass-lint": "^1.3.2",
+    "gulp-sass-lint": "^1.3.3",
     "gulp-sitemap": "^4.2.0",
     "gulp-size": "^2.1.0",
-    "gulp-sourcemaps": "^2.6.0",
+    "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.2",
     "gulp-util": "^3.0.8",
@@ -68,13 +68,13 @@
     "through2": "^2.0.3",
     "turbolinks": "^5.0.3",
     "webfontloader": "1.6.28",
-    "webpack": "^3.5.3"
+    "webpack": "^3.6.0"
   },
   "devDependencies": {
     "gulp-insert": "^0.5.0",
     "merge-stream": "^1.0.1",
-    "qgen": "^2.1.1",
-    "slugify": "^1.1.0"
+    "qgen": "^2.1.2",
+    "slugify": "^1.2.1"
   },
   "xo": {
     "parserOptions": {
