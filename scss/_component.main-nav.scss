@@ -1,7 +1,6 @@
 .main-nav {
   a {
     @extend %link-major;
-    @include font-family-alt;
     display: block;
     margin: 0;
     color: color('text-light');

@@ -2,10 +2,9 @@ $height-button: $space-l;
 $height-button-small: $space-m;
 
 .button {
-  @include font-family-alt;
   display: inline-block;
-  padding-right: $space-m;
-  padding-left: $space-m;
+  padding: 0 $space-m; // Reset padding on inputs like button, submit
+  font-family: $font-family; // Set font-family on inputs like button, submit
   line-height: $height-button;
   color: color('text-light');
   text-align: center;
@@ -14,7 +13,9 @@ $height-button-small: $space-m;
   vertical-align: middle;
   background-color: transparent;
   border: $border-width-l $border-style;
+  border-radius: 0; // Removes border-radius on Chrome input[type=button]
   box-shadow: none;
+  font-feature-settings: $font-features, 'smcp', 'c2sc';
 
   @include bp(medium) {
     font-size: modular-scale(-1);

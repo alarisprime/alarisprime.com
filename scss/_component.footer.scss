@@ -4,7 +4,6 @@
 
 .footer__content,
 .footer__legal {
-  @include font-family-alt;
   padding-bottom: $space-m;
   margin-top: 0;
   font-size: modular-scale(-1);
