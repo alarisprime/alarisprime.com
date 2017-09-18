@@ -87,9 +87,9 @@ $colors: (
 $fallback-font-families: Georgia, Times, 'Times New Roman', serif;
 $font-family:            et-book, $fallback-font-families;
 
-$font-size: #{$root-font-size-px}px;
-$font-weight:      400;
-$font-weight-bold: 600;
+$font-size:        #{$root-font-size-px}px;
+$font-weight:      normal;
+$font-weight-bold: bold;
 
 $line-height-px:      $root-line-height * 1px;
 $line-height:         $root-line-height / $root-font-size-px;
