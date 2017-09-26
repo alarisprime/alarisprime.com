@@ -13,7 +13,7 @@ $height-button-small: $space-m;
   white-space: nowrap;
   vertical-align: middle;
   box-shadow: none;
-  font-feature-settings: $font-features, 'smcp', 'c2sc';
+  font-feature-settings: $font-features;
 
   @include bp(medium) {
     font-size: modular-scale(4);
