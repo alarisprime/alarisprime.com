@@ -2,6 +2,8 @@
 name: Sidhartha Chatterjee
 email: me@sidharthachatterjee.com
 socialNetworks:
+  - title: Twitter
+    url: https://twitter.com/chatsidhartha
   - title: GitHub
     url: https://github.com/sidharthachatterjee
   - title: Website
