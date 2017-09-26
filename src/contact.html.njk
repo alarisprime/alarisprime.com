@@ -15,14 +15,11 @@ hideLetsTalk: true
 			<h1 class="article__title">Contact</h1>
 		</div>
 		<div class="article__content article__content--column">
-			<p>Please email us at <a class="link link--minor" href="mailto:{{site.contactEmail}}">{{site.contactEmail}}</a>.</p>
+			<p>
+				Please email us at <a class="link link--minor" href="mailto:{{site.contactEmail}}">{{site.contactEmail}}</a>.
+			</p>
 		</div>
 	</div>
 </article>
-{{ divider() }}
-{{ contactForm(
-	pageIdentifier=title,
-	email=site.contactEmail,
-	newsletterSignupUrl=site.newsletterSignupUrl) }}
 
 {% endblock %}
