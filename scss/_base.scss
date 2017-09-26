@@ -2,30 +2,27 @@
 
 html {
   font-family: $fallback-font-families;
-  font-size: percentage($root-font-size-fallback-px / 16);
+  font-size: percentage($root-font-size-px / 16);
   line-height: $root-line-height / $root-font-size-px;
-  letter-spacing: .017647059em; // 0.3px / 17px
-  word-spacing: -.055882353em; // 0.95px / 17px
+  letter-spacing: .005882353em; // 0.1px / 17px
   color: color('text');
   text-rendering: geometricPrecision;
   background-color: color('bg');
   font-feature-settings: $font-features;
 
   @include bp(medium) {
-    font-size: percentage((23 * $root-font-size-fallback-px / $root-font-size-px) / 16); // 17px → 23px
+    font-size: percentage((23 * $root-font-size-px / $root-font-size-px) / 16); // 17px → 23px
   }
 
   @include bp(large) {
-    font-size: percentage((28 * $root-font-size-fallback-px / $root-font-size-px) / 16); // 17px → 28px
+    font-size: percentage((28 * $root-font-size-px / $root-font-size-px) / 16); // 17px → 28px
   }
 
 
   &.base-fonts-loaded,
   &.base-fonts-loading-expired {
     font-family: $font-family;
-    font-size: percentage($root-font-size-px / 16);
     letter-spacing: normal;
-    word-spacing: normal;
 
     @include bp(medium) {
       font-size: percentage(23 / 16); // 17px → 23px

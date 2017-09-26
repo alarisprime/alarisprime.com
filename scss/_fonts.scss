@@ -1,19 +1,19 @@
 @font-face {
-  font-family: et-book;
+  font-family: 'Source Serif Pro';
   font-style: normal;
   font-weight: normal;
   src:
-  url('/fonts/etbookot-roman.woff2') format('woff2'),
-  url('/fonts/etbookot-roman.woff') format('woff');
+  url('/fonts/SourceSerifPro-Regular.otf.woff2') format('woff2'),
+  url('/fonts/SourceSerifPro-Regular.otf.woff') format('woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: et-book;
+  font-family: 'Source Serif Pro';
   font-style: normal;
   font-weight: bold;
   src:
-  url('/fonts/etbookot-bold.woff2') format('woff2'),
-  url('/fonts/etbookot-bold.woff') format('woff');
+  url('/fonts/SourceSerifPro-Bold.otf.woff2') format('woff2'),
+  url('/fonts/SourceSerifPro-Bold.otf.woff') format('woff');
   font-display: swap;
 }

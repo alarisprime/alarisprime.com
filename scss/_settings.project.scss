@@ -1,11 +1,10 @@
 // ---
 // The Base
 // ---
-$root-font-size-px:          17;
-$root-font-size-fallback-px: 15;
-$root-line-height:           28;
-$root-scaling-ratio:         1.333;
-$root-space:                 1rem * (($root-line-height / 2) / $root-font-size-px);
+$root-font-size-px:  17;
+$root-line-height:   28;
+$root-scaling-ratio: 1.333;
+$root-space:         1rem * (($root-line-height / 2) / $root-font-size-px);
 
 // ---
 // Breakpoints
@@ -85,7 +84,7 @@ $colors: (
 // Typography
 // ---
 $fallback-font-families: Georgia, Times, 'Times New Roman', serif;
-$font-family:            et-book, $fallback-font-families;
+$font-family:            'Source Serif Pro', $fallback-font-families;
 
 $font-size:        #{$root-font-size-px}px;
 $font-weight:      normal;
