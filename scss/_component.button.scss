@@ -12,7 +12,7 @@ $height-button-small: $space-m;
   white-space: nowrap;
   vertical-align: middle;
   background-color: transparent;
-  border: $border-width-l $border-style;
+  border: $border-width-m $border-style;
   border-radius: 0; // Removes border-radius on Chrome input[type=button]
   box-shadow: none;
   font-feature-settings: $font-features, 'smcp', 'c2sc';
