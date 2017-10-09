@@ -42,13 +42,12 @@
 		<!-- endbuild -->
 	</head>
 	<body>
-		<div class="page">
-			{% include "../includes/header.njk" %}
-			<main role="main" id="main">
-				{% block content %}
-				{% endblock %}
-			</main>
-			{% include "../includes/footer.njk" %}
-		</div>
+		<a href="#main">skip to content</a>
+		{% include "../includes/header.njk" %}
+		<main role="main" id="main">
+			{% block content %}
+			{% endblock %}
+		</main>
+		{% include "../includes/footer.njk" %}
 	</body>
 </html>
