@@ -100,19 +100,25 @@ gulp.task('scripts', cb => {
 });
 
 gulp.task('stylesheets', () => {
-	return gulp.src('scss/**/*.scss')
+	const plugins = [
+		require('postcss-smart-import')({
+			plugins: [
+				require('stylelint')()
+			]
+		}),
+		require('postcss-modular-scale')(),
+		require('postcss-mixins')(),
+		require('postcss-cssnext')(),
+		require('postcss-reporter')({clearReportedMessages: true})
+	];
+
+	return gulp.src('css/main.css')
 		.pipe($.plumber())
-		.pipe($.sassGlob())
 		.pipe($.sourcemaps.init())
-		.pipe($.if('bundle.scss', $.insert.prepend(`$site-brand-color: ${siteConfig.brandColor};`)))
-		.pipe($.sass.sync({
-			outputStyle: 'expanded',
-			precision: 10,
-			includePaths: ['./node_modules']
-		}).on('error', $.sass.logError))
-		.pipe($.postcss([require('autoprefixer')]))
+		.pipe($.postcss(plugins))
 		.pipe($.sourcemaps.write())
-		.pipe(gulp.dest('dist/css/'));
+		.pipe(gulp.dest('dist/css/'))
+		.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('copy:root', () => {
@@ -157,15 +163,7 @@ gulp.task('lint:scripts', () => {
 	.pipe($.xo());
 });
 
-gulp.task('lint:stylesheets', () => {
-	return gulp.src([
-		'scss/**/*.scss'
-	])
-	.pipe($.sassLint())
-	.pipe($.sassLint.format());
-});
-
-gulp.task('lint', ['lint:scripts', 'lint:stylesheets']);
+gulp.task('lint', ['lint:scripts']);
 
 gulp.task('useref', () => {
 	const userefConfig = {
@@ -293,7 +291,7 @@ gulp.task('serve', ['build-core'], () => {
 		'gulpfile.babel.js'
 	], ['lint:scripts', 'scripts']);
 
-	gulp.watch('scss/**/*.scss', ['stylesheets', 'lint:stylesheets']);
+	gulp.watch('css/**/*.css', ['stylesheets']);
 
 	gulp.watch([
 		'dist/**/*'
