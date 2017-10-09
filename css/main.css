@@ -1,7 +1,2 @@
-:root {
-	--color-primary: #00a86b;
-}
-
-body {
-	color: var(--color-primary);
-}
+@import "./_core.fonts.css";
+@import "./_core.base.css";

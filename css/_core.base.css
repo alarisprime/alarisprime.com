@@ -1,0 +1,9 @@
+:root {
+	--color-primary: #00a86b;
+	--fallback-font-family: Georgia, Times, 'Times New Roman', serif;
+	--font-family: 'Source Serif Pro', var(--fallback-font-family);
+}
+
+body {
+	font-family: var(--font-family);
+}
