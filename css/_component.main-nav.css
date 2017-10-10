@@ -2,11 +2,6 @@
 	max-width: var(--max-width-container);
 	margin: 0 auto;
 	color: var(--color-grey-lighter);
-
-	@media (--m-up) {
-		font-size: ms(1) em;
-		line-height: var(--line-height-heading);
-	}
 }
 
 .main-nav__list {
@@ -19,14 +14,14 @@
 
 .main-nav__i {
 	display: block;
-	margin-top: var(--space-s);
+	margin-top: 0;
 
-	&::before {
+	&::after {
 		content: "\00B7";
 	}
 
 	&:last-child::after {
-		content: "\00B7";
+		content: none;
 	}
 }
 
@@ -34,7 +29,7 @@
 	@apply --link-reset;
 
 	display: inline-block;
-	padding: var(--space-xxs);
+	padding: var(--space-s) var(--space-xxs);
 	color: var(--color-text);
 	font-variant-caps: small-caps;
 
@@ -53,7 +48,7 @@
 	width: 100%;
 	margin-top: 0;
 
-	&::before {
+	&::after {
 		content: none;
 	}
 

@@ -6,9 +6,15 @@
 
 html {
 	background-color: var(--color-background-page);
+	color: var(--color-text);
 	font-family: var(--font-family-fallback);
 	font-size: calc((var(--font-size) / 16) * 100%);
+	font-variant-numeric: oldstyle-nums;
 	line-height: var(--line-height);
+
+	@media (--m-up) {
+		font-size: calc((var(--font-size-medium) / 16) * 100%);
+	}
 
 	& * {
 		margin: 0;
@@ -44,6 +50,67 @@ a,
 	}
 }
 
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+p + p {
+	margin-top: 0;
+	text-indent: var(--space-m);
+}
+
+blockquote {
+	font-size: ms(1) em;
+	font-variant-ligatures: common-ligatures;
+
+	cite {
+		display: block;
+		color: var(--color-text-light);
+		font-size: ms(-1) em;
+		font-style: normal;
+
+		&::before {
+			content: '—';
+		}
+	}
+}
+
+strong,
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+abbr {
+	font-variant-caps: small-caps;
+
+	&[title] {
+		border-bottom: var(--border-dotted);
+		text-decoration: none;
+		cursor: help;
+	}
+}
+
+dt,
+dd {
+	font-size: ms(-1) em;
+	line-height: var(--line-height-heading);
+}
+
+dt {
+	margin-bottom: 0;
+	color: var(--color-text-light);
+	font-variant-caps: small-caps;
+}
+
+dd {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
 :root {
 	--link-reset: {
 		box-shadow: none;
@@ -56,8 +123,15 @@ a,
 			text-shadow: none;
 		}
 	}
-}
 
-.link--reset {
-	@apply --link-reset;
+	--container: {
+		max-width: var(--max-width-container);
+		margin: 0 auto;
+		padding: 0 var(--space-s);
+
+		@media (--m-up) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
 }

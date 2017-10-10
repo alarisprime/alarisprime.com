@@ -1,0 +1,25 @@
+.hero {
+	@apply --container;
+
+	padding-top: var(--space-m);
+	padding-bottom: var(--space-l);
+
+	@media (--m-up) {
+		padding-top: var(--space-l);
+		padding-bottom: var(--space-xl);
+	}
+
+	& blockquote {
+		color: var(--color-shadow);
+		font-size: ms(2) em;
+		font-weight: bold;
+
+		@media (--m-up) {
+			font-size: ms(3) em;
+		}
+	}
+
+	& * + * {
+		margin-top: var(--space-s);
+	}
+}

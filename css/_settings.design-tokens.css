@@ -7,7 +7,8 @@
 	--color-primary: #00a86b;
 	--color-gradient-stop-1: var(--color-primary);
 	--color-gradient-stop-2: color(var(--color-primary) tint(74%));
-	--color-highlight: #fafafa;
+	--color-highlight: #f2f5f4;
+	--color-shadow: #000;
 	--color-grey: #757575;
 	--color-grey-lighter: color(var(--color-grey) tint(54%));
 	--color-grey-light: color(var(--color-grey) tint(13.5%));
@@ -16,6 +17,8 @@
 	--color-text: var(--color-grey-dark);
 	--color-text-light: var(--color-grey-light);
 	--color-link: var(--color-primary);
+	--color-border: color(var(--color-grey-lighter) tint(30%));
+	--color-border-dark: color(var(--color-grey-lighter) shade(20%));
 	--color-border-link: var(--color-primary);
 
 	/* Typography */
@@ -23,8 +26,8 @@
 	--font-family: 'Source Serif Pro', var(--font-family-fallback);
 	--font-family-monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	--font-size: 17;
-	--font-size-medium: 28;
-	--line-height: 1.6470588235; /* 28 / 17 */
+	--font-size-medium: 23;
+	--line-height: 1.4117647059; /* 24 / 17 */
 	--line-height-small: 1.2;
 	--line-height-heading: 1.1;
 	--font-variant: diagonal-fractions slashed-zero;
@@ -40,8 +43,13 @@
 	--space-xxl: calc(var(--line-height) * 8rem);
 	--space-xxxl: calc(var(--line-height) * 16rem);
 
+	/* Border */
+	--border-width: 1px;
+	--border: var(--border-width) solid var(--color-border);
+	--border-dotted: var(--border-width) dotted var(--color-border-dark);
+
 	/* Widths */
-	--max-width-container: 755px; /* 24 * 1.333^12 */
+	--max-width-container: 660px;
 
 	/* Animation */
 	--delay: 0.1s;
