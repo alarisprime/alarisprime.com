@@ -39,7 +39,7 @@
 	--space-xxxl: calc(var(--line-height) * 16rem);
 
 	/* Widths */
-	--max-width-container: 894px; /* 24 * 1.414^10 */
+	--max-width-container: 755px; /* 24 * 1.333^12 */
 
 	/* Animation */
 	--delay: 0.1s;
