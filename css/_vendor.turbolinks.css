@@ -1,0 +1,5 @@
+.turbolinks-progress-bar {
+	height: var(--space-xxs);
+	margin-top: 0;
+	background-color: var(--color-primary);
+}
