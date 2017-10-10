@@ -1,14 +1,10 @@
-.hero {
+.article {
 	@apply --container;
 
 	margin-top: var(--space-l);
 	margin-bottom: var(--space-l);
-
-	& * + * {
-		margin-top: var(--space-s);
-	}
 }
 
-.hero__title {
-	text-align: left;
+.article__title + .article__content {
+	margin-top: var(--space-l);
 }

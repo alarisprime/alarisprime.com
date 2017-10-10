@@ -1,10 +1,5 @@
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
 html {
+	box-sizing: border-box;
 	background-color: var(--color-background-page);
 	color: var(--color-text);
 	font-family: var(--font-family-fallback);
@@ -23,6 +18,12 @@ html {
 	& * + * {
 		margin-top: var(--space-m);
 	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 body {
@@ -61,14 +62,30 @@ p + p {
 	text-indent: var(--space-m);
 }
 
+p + br {
+	content: ' ';
+	display: block;
+}
+
+h1 {
+	color: var(--color-text-dark);
+	font-size: ms(2) em;
+	font-weight: bold;
+	line-height: var(--line-height-heading);
+	text-align: center;
+
+	@media (--m-up) {
+		font-size: ms(3) em;
+	}
+}
+
 blockquote {
-	font-size: ms(1) em;
 	font-variant-ligatures: common-ligatures;
 
-	cite {
+	& cite {
 		display: block;
+		margin-top: 0;
 		color: var(--color-text-light);
-		font-size: ms(-1) em;
 		font-style: normal;
 
 		&::before {
@@ -111,6 +128,14 @@ dd {
 	margin-left: 0;
 }
 
+hr {
+	width: 25.015106843%; /* 100% / 1.414^4 */
+	height: var(--border-width);
+	margin: var(--space-l) auto;
+	border: none;
+	background: var(--color-border);
+}
+
 :root {
 	--link-reset: {
 		box-shadow: none;
@@ -126,7 +151,8 @@ dd {
 
 	--container: {
 		max-width: var(--max-width-container);
-		margin: 0 auto;
+		margin-right: auto;
+		margin-left: auto;
 		padding: 0 var(--space-s);
 
 		@media (--m-up) {
@@ -134,4 +160,8 @@ dd {
 			padding-left: 0;
 		}
 	}
+}
+
+#main {
+	min-height: 50.015104562vh; /* 100/1.414^2 */
 }

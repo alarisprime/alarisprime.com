@@ -7,7 +7,7 @@
 	--color-primary: #00a86b;
 	--color-gradient-stop-1: var(--color-primary);
 	--color-gradient-stop-2: color(var(--color-primary) tint(74%));
-	--color-highlight: #f2f5f4;
+	--color-highlight: #f7faf9;
 	--color-shadow: #000;
 	--color-grey: #757575;
 	--color-grey-lighter: color(var(--color-grey) tint(54%));
@@ -16,6 +16,7 @@
 	--color-background-page: var(--color-highlight);
 	--color-text: var(--color-grey-dark);
 	--color-text-light: var(--color-grey-light);
+	--color-text-dark: var(--color-shadow);
 	--color-link: var(--color-primary);
 	--color-border: color(var(--color-grey-lighter) tint(30%));
 	--color-border-dark: color(var(--color-grey-lighter) shade(20%));
@@ -29,7 +30,7 @@
 	--font-size-medium: 23;
 	--line-height: 1.4117647059; /* 24 / 17 */
 	--line-height-small: 1.2;
-	--line-height-heading: 1.1;
+	--line-height-heading: 1.2;
 	--font-variant: diagonal-fractions slashed-zero;
 
 	/* Spacing */

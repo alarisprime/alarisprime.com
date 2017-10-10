@@ -7,16 +7,18 @@ description: We design and build products for beauty and performance.
 
 {% block content %}
 <section class="hero">
-	<blockquote>
+	<h1 class="hero__title">
 		{{description}}
-	</blockquote>
+	</h1>
 	<p>We have helped
 		<a href="http://www.adya.io/">Adya</a>,
 		<a href="https://www.zoho.com/">Zoho</a>,
 		<a href="http://adityabirla.com/">Aditya Birla</a>,
 		<a href="http://www.razorfish.com/">Razorfish</a>,
-		and others.
+		and
+		<a href="/work">others</a>.
 	</p>
 </section>
+<hr>
 {{ testimonials(collections.testimonials) }}
 {% endblock %}

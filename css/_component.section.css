@@ -1,0 +1,11 @@
+.section + .section {
+	margin-top: var(--space-l);
+}
+
+.section__header {
+	color: var(--color-text-dark);
+}
+
+.section__header + .section__content {
+	margin-top: var(--space-s);
+}
