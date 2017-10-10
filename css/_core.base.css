@@ -27,3 +27,37 @@ body {
 .base-fonts-loading-expired {
 	font-family: var(--font-family);
 }
+
+a,
+.link {
+	transition: color var(--delay) var(--easing), box-shadow var(--delay) var(--easing);
+	box-shadow: 0 1px var(--color-border-link);
+	color: currentColor;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	&:focus {
+		box-shadow: 0 1px var(--color-link), inset 0 -0.15em var(--color-link); /* 4px / 20px */
+		color: var(--color-link);
+		text-shadow: 1px 1px var(--color-highlight), -1px 1px var(--color-highlight), 1px -1px var(--color-highlight), -1px -1px var(--color-highlight);
+	}
+}
+
+:root {
+	--link-reset: {
+		box-shadow: none;
+		text-shadow: none;
+
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: none;
+			text-shadow: none;
+		}
+	}
+}
+
+.link--reset {
+	@apply --link-reset;
+}

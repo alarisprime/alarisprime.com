@@ -1,12 +1,20 @@
 :root {
 	/* Vendor */
 	--ms-bases: 1;
-	--ms-ratios: 1.414;
+	--ms-ratios: 1.333333333;
 
 	/* Colours */
 	--color-primary: #00a86b;
 	--color-highlight: #fafafa;
+	--color-grey: #757575;
+	--color-grey-lighter: color(var(--color-grey) tint(13.5%));
+	--color-grey-light: color(var(--color-grey) tint(27%));
+	--color-grey-dark: color(var(--color-grey) shade(27%));
 	--color-background-page: var(--color-highlight);
+	--color-text: var(--color-grey-dark);
+	--color-text-light: var(--color-grey-light);
+	--color-link: var(--color-primary);
+	--color-border-link: var(--color-primary);
 
 	/* Typography */
 	--font-family-fallback: Georgia, Times, 'Times New Roman', serif;
@@ -32,4 +40,8 @@
 
 	/* Widths */
 	--max-width-container: 894px; /* 24 * 1.414^10 */
+
+	/* Animation */
+	--delay: 0.1s;
+	--easing: ease-out;
 }
