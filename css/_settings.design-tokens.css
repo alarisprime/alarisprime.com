@@ -5,6 +5,8 @@
 
 	/* Colours */
 	--color-primary: #00a86b;
+	--color-highlight: #fafafa;
+	--color-background-page: var(--color-highlight);
 
 	/* Typography */
 	--font-family-fallback: Georgia, Times, 'Times New Roman', serif;
@@ -27,4 +29,7 @@
 	--space-xl: calc(var(--line-height) * 4rem);
 	--space-xxl: calc(var(--line-height) * 8rem);
 	--space-xxxl: calc(var(--line-height) * 16rem);
+
+	/* Widths */
+	--max-width-container: 894px; /* 24 * 1.414^10 */
 }

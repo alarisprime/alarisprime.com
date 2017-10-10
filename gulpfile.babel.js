@@ -278,7 +278,8 @@ gulp.task('serve', ['build-core'], () => {
 		'src/**/*.njk',
 		'includes/**/*.njk',
 		'macros/**/*.njk',
-		'layouts/**/*.njk'
+		'layouts/**/*.njk',
+		'src/**/*.svg'
 	], ['metalsmith']);
 
 	gulp.watch([

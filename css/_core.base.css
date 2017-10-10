@@ -5,6 +5,7 @@
 }
 
 html {
+	background-color: var(--color-background-page);
 	font-family: var(--font-family-fallback);
 	font-size: calc((var(--font-size) / 16) * 100%);
 	line-height: var(--line-height);

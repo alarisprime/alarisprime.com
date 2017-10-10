@@ -1,5 +1,5 @@
 .main-nav {
-	max-width: 720px;
+	max-width: var(--max-width-container);
 	margin: 0 auto;
 
 	& ul {
@@ -24,16 +24,11 @@
 }
 
 .main-nav__link {
-	padding: var(--space-xs) var(--space-s);
+	padding: var(--space-xs);
 
 	@media (--m-up) {
-		padding-right: var(--space-m);
-		padding-left: var(--space-m);
-	}
-
-	@media (--l-up) {
-		padding-right: var(--space-l);
-		padding-left: var(--space-l);
+		padding-right: var(--space-s);
+		padding-left: var(--space-s);
 	}
 }
 
