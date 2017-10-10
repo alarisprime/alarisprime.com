@@ -1,0 +1,30 @@
+:root {
+	/* Vendor */
+	--ms-bases: 1;
+	--ms-ratios: 1.414;
+
+	/* Colours */
+	--color-primary: #00a86b;
+
+	/* Typography */
+	--font-family-fallback: Georgia, Times, 'Times New Roman', serif;
+	--font-family: 'Source Serif Pro', var(--font-family-fallback);
+	--font-family-monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	--font-size: 17;
+	--font-size-medium: 28;
+	--line-height: 1.6470588235; /* 28 / 17 */
+	--line-height-small: 1.2;
+	--line-height-heading: 1.1;
+	--font-variant: diagonal-fractions slashed-zero;
+
+	/* Spacing */
+	--space-none: 0;
+	--space-xxs: calc(var(--line-height) / 8 * 1rem);
+	--space-xs: calc(var(--line-height) / 4 * 1rem);
+	--space-s: calc(var(--line-height) / 2 * 1rem);
+	--space-m: calc(var(--line-height) * 1rem);
+	--space-l: calc(var(--line-height) * 2rem);
+	--space-xl: calc(var(--line-height) * 4rem);
+	--space-xxl: calc(var(--line-height) * 8rem);
+	--space-xxxl: calc(var(--line-height) * 16rem);
+}

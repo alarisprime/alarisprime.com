@@ -1,0 +1,3 @@
+@custom-media --m-up (width >= 48em); /* 768px */
+@custom-media --l-up (width >= 65em); /* 1040px */
+@custom-media --xl-up (width >= 75em); /* 1040px */

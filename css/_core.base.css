@@ -1,9 +1,25 @@
-:root {
-	--color-primary: #00a86b;
-	--fallback-font-family: Georgia, Times, 'Times New Roman', serif;
-	--font-family: 'Source Serif Pro', var(--fallback-font-family);
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 
-	font-family: var(--fallback-font-family);
+html {
+	font-family: var(--font-family-fallback);
+	font-size: calc((var(--font-size) / 16) * 100%);
+	line-height: var(--line-height);
+
+	& * {
+		margin: 0;
+	}
+
+	& * + * {
+		margin-top: var(--space-m);
+	}
+}
+
+body {
+	margin: 0;
 }
 
 .base-fonts-loaded,
