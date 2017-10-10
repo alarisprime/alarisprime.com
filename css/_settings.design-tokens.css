@@ -5,6 +5,8 @@
 
 	/* Colours */
 	--color-primary: #00a86b;
+	--color-gradient-stop-1: var(--color-primary);
+	--color-gradient-stop-2: color(var(--color-primary) tint(74%));
 	--color-highlight: #fafafa;
 	--color-grey: #757575;
 	--color-grey-lighter: color(var(--color-grey) tint(54%));

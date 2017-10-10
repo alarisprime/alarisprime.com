@@ -2,21 +2,9 @@
 		<title>Alaris Prime</title>
 		<g>
 			<defs>
-				<linearGradient id="logo-gradient-light" x1="0%" y1="33.333333%" x2="100%" y2="66.666666%" >
-					<stop offset="0%" stop-color="#B8E3D3">
-						<animate attributeName="stop-color" values="#B8E3D3; #EBFAF4; #B8E3D3" dur="5s" repeatCount="indefinite"></animate>
-					</stop>
-					<stop offset="100%" stop-color="#EBFAF4">
-						<animate attributeName="stop-color" values="#EBFAF4; #B8E3D3; #EBFAF4" dur="5s" repeatCount="indefinite"></animate>
-					</stop>
-				</linearGradient>
 				<linearGradient id="logo-gradient" x1="0%" y1="33.333333%" x2="100%" y2="66.666666%" >
-					<stop offset="0%" stop-color="#53C99E">
-						<animate attributeName="stop-color" values="#53C99E; #79E0BB; #53C99E" dur="5s" repeatCount="indefinite"></animate>
-					</stop>
-					<stop offset="100%" stop-color="#79E0BB">
-						<animate attributeName="stop-color" values="#79E0BB; #53C99E; #79E0BB" dur="5s" repeatCount="indefinite"></animate>
-					</stop>
+					<stop id="logo-gradient-stop1" offset="0%" stop-color="#00a86b"/>
+					<stop id="logo-gradient-stop2" offset="100%" stop-color="#12e095"/>
 				</linearGradient>
 			</defs>
 		</g>

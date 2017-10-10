@@ -16,7 +16,25 @@
 
 		@media (--m-up) {
 			top: -0.1764705882em; /* 3 / 17 */
-			fill: url('#logo-gradient-light');
+			opacity: 0.65;
 		}
 	}
+}
+
+#logo-gradient-stop1 {
+	animation: change-color1 4s ease-in-out infinite alternate;
+}
+
+#logo-gradient-stop2 {
+	animation: change-color2 4s ease-in-out infinite alternate;
+}
+
+@keyframes change-color1 {
+	0% { stop-color: var(--color-gradient-stop-1); }
+	100% { stop-color: var(--color-gradient-stop-2); }
+}
+
+@keyframes change-color2 {
+	0% { stop-color: var(--color-gradient-stop-2); }
+	100% { stop-color: var(--color-gradient-stop-1); }
 }
