@@ -1,19 +1,9 @@
 <nav class="main-nav">
 	<ul class="main-nav__list">
-		<li class="main-nav__i main-nav__i--logo">
-			<a class="main-nav__link" href="/" title="{{site.title}} Front Page"><span class="hide-visually">{{site.title}}</span><span class="logo" aria-hidden="true">{% include "../images/logo-gradient.svg" %}</span></a>
-		</li>
-		<li class="main-nav__i">
-			<a class="main-nav__link {{ 'active' if path == 'work.html.njk' }}" href="/work/">Work</a>
-		</li>
-		<li class="main-nav__i">
-			<a class="main-nav__link {{ 'active' if path == 'workshops.html.njk' }}" href="/workshops/">Workshops</a>
-		</li>
-		<li class="main-nav__i">
-			<a class="main-nav__link {{ 'active' if path == 'contact.html.njk' }}" href="/contact/">Contact</a>
-		</li>
-		<li class="main-nav__i">
-			<a class="main-nav__link" href="{{ site.blogUrl }}">Blog</a>
-		</li>
+		<li class="main-nav__i main-nav__i--logo"><a class="main-nav__link" href="/" title="{{site.title}} Front Page"><span class="hide-visually">{{site.title}}</span><span class="logo" aria-hidden="true">{% include "../images/logo-gradient.svg" %}</span></a></li>
+		<li class="main-nav__i"><a class="main-nav__link {{ 'active' if path == 'work.html.njk' }}" href="/work/">Work</a></li>
+		<li class="main-nav__i"><a class="main-nav__link {{ 'active' if path == 'workshops.html.njk' }}" href="/workshops/">Workshops</a></li>
+		<li class="main-nav__i"><a class="main-nav__link {{ 'active' if path == 'contact.html.njk' }}" href="/contact/">Contact</a></li>
+		<li class="main-nav__i"><a class="main-nav__link" href="{{ site.blogUrl }}">Blog</a></li>
 	</ul>
 </nav>

@@ -1,7 +1,12 @@
 .main-nav {
 	max-width: var(--max-width-container);
 	margin: 0 auto;
-	color: var(--color-text-light);
+	color: var(--color-grey-lighter);
+
+	@media (--m-up) {
+		font-size: ms(1) em;
+		line-height: var(--line-height-heading);
+	}
 }
 
 .main-nav__list {
@@ -17,11 +22,11 @@
 	margin-top: var(--space-s);
 
 	&::before {
-		content: "·";
+		content: "\00B7";
 	}
 
 	&:last-child::after {
-		content: "·";
+		content: "\00B7";
 	}
 }
 
@@ -29,14 +34,12 @@
 	@apply --link-reset;
 
 	display: inline-block;
-	padding: var(--space-xs);
+	padding: var(--space-xxs);
 	color: var(--color-text);
 	font-variant-caps: small-caps;
 
 	@media (--m-up) {
 		padding: var(--space-s);
-		font-size: ms(1) em;
-		line-height: var(--line-height-heading);
 	}
 
 	&.active {
