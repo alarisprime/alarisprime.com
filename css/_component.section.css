@@ -7,5 +7,5 @@
 }
 
 .section__header + .section__content {
-	margin-top: var(--space-s);
+	margin-top: var(--space-xs);
 }

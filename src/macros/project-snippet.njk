@@ -1,5 +1,5 @@
 {% macro projectSnippet(metaData, console) %}
-<div class="section">
+<section class="section">
 	<div class="section__header">
 		<h2>
 			{% if metaData.projectUrl %}
@@ -31,5 +31,5 @@
 	<div class="section__content">
 		{{metaData.contents | safe}}
 	</div>
-</div>
+</section>
 {% endmacro %}
