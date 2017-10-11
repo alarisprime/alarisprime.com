@@ -29,8 +29,8 @@
 	--font-size: 17;
 	--font-size-medium: 23;
 	--line-height: 1.4117647059; /* 24 / 17 */
-	--line-height-small: 1.2;
-	--line-height-heading: 1.2;
+	--line-height-small: 1.568627451; /* 20 / 12.75 */
+	--line-height-heading: 1.3235274654; /* 30 / 22.6667 */
 	--font-variant: diagonal-fractions slashed-zero;
 
 	/* Spacing */

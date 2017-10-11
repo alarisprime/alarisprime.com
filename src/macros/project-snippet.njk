@@ -1,7 +1,7 @@
 {% macro projectSnippet(metaData, console) %}
 <div class="section">
 	<div class="section__header">
-		<h3>
+		<h2>
 			{% if metaData.projectUrl %}
 			<a href="{{metaData.projectUrl}}">{{metaData.title}}</a>
 			{% else %}
@@ -26,7 +26,7 @@
 				{% endif %}
 			</span>
 			{% endif %}
-		</h3>
+		</h2>
 	</div>
 	<div class="section__content">
 		{{metaData.contents | safe}}
