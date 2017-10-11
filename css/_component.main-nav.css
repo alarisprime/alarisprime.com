@@ -29,7 +29,7 @@
 	@apply --link-reset;
 
 	display: inline-block;
-	padding: var(--space-s) var(--space-xxs);
+	padding: var(--space-s) var(--space-xs);
 	color: var(--color-text);
 	font-variant-caps: small-caps;
 
