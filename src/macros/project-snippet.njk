@@ -1,35 +1,35 @@
 {% macro projectSnippet(metaData, console) %}
-<div class="media-object media-object--space-out media-object--flatten-figure-on-small">
-	<div class="media-object__figure">
-		<h3>
+<section class="section">
+	<div class="section__header">
+		<h2>
 			{% if metaData.projectUrl %}
 			<a href="{{metaData.projectUrl}}">{{metaData.title}}</a>
 			{% else %}
 			{{metaData.title}}
 			{% endif %}
-		</h3>
-		{% if metaData.company %}
-		<h4 class="sub-title">
-			By{{''}}
-			{% if metaData.companyUrl %}
-			<a href="{{metaData.companyUrl}}">{{metaData.company}}</a>
-			{% else %}
-			{{metaData.company}}
+			{% if metaData.company %}
+			<span class="section__sub-title">
+				by{{''}}
+				{% if metaData.companyUrl %}
+				<a href="{{metaData.companyUrl}}">{{metaData.company}}</a>
+				{% else %}
+				{{metaData.company}}
+				{% endif %}
+			</span>
+			{% elif metaData.agency %}
+			<span class="section__sub-title">
+				With{{''}}
+				{% if metaData.agencyUrl %}
+				<a href="{{metaData.agencyUrl}}">{{metaData.agency}}</a>
+				{% else %}
+				{{metaData.agency}}
+				{% endif %}
+			</span>
 			{% endif %}
-		</h4>
-		{% elif metaData.agency %}
-		<h4 class="sub-title">
-			With{{''}}
-			{% if metaData.agencyUrl %}
-			<a href="{{metaData.agencyUrl}}">{{metaData.agency}}</a>
-			{% else %}
-			{{metaData.agency}}
-			{% endif %}
-		</h4>
-		{% endif %}
+		</h2>
 	</div>
-	<div class="media-object__content">
+	<div class="section__content">
 		{{metaData.contents | safe}}
 	</div>
-</div>
+</section>
 {% endmacro %}

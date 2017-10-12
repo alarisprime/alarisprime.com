@@ -1,15 +1,9 @@
-{% from "../macros/divider.njk" import divider %}
-<div class="header">
-	<div class="header__brand">
-		<a class="header__logo-link" href="/"><span class="logo">{% include "../images/logo.svg" %}</span></a>
-	</div>
-	<div class="header__nav">
-		<nav class="main-nav">
-			<a class="{{ 'active' if path == 'work.html.njk' }}" href="/work/">Work</a>
-			<a class="{{ 'active' if path == 'workshops.html.njk' }}" href="/workshops/">Workshops</a>
-			<a class="{{ 'active' if path == 'contact.html.njk' }}" href="/contact/">Contact</a>
-			<a href="{{ site.blogUrl }}">Blog</a>
-		</nav>
-	</div>
-</div>
-{{ divider() }}
+<nav class="main-nav">
+	<ul class="main-nav__list">
+		<li class="main-nav__i main-nav__i--logo"><a class="main-nav__link" href="/" title="{{site.title}} Front Page"><span class="hide-visually">{{site.title}}</span><span class="logo" aria-hidden="true">{% include "../images/logo-gradient.svg" %}</span></a></li>
+		<li class="main-nav__i"><a class="main-nav__link {{ 'active' if path == 'work.html.njk' }}" href="/work/">Work</a></li>
+		<li class="main-nav__i"><a class="main-nav__link {{ 'active' if path == 'workshops.html.njk' }}" href="/workshops/">Workshops</a></li>
+		<li class="main-nav__i"><a class="main-nav__link {{ 'active' if path == 'contact.html.njk' }}" href="/contact/">Contact</a></li>
+		<li class="main-nav__i"><a class="main-nav__link" href="{{ site.blogUrl }}" target="_tab">Blog</a></li>
+	</ul>
+</nav>

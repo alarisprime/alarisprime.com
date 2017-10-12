@@ -1,0 +1,19 @@
+.footer {
+	margin: var(--space-l) 0 var(--space-m);
+	color: var(--color-text-light);
+	font-size: ms(-1) em;
+	line-height: var(--line-height-small);
+	text-align: center;
+}
+
+.footer__content,
+.footer__legal {
+	display: inline-block;
+	margin-top: 0;
+}
+
+.footer__content + .footer__legal {
+	&::before {
+		content: "· ";
+	}
+}

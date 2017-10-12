@@ -1,0 +1,58 @@
+:root {
+	/* Vendor */
+	--ms-bases: 1;
+	--ms-ratios: 1.333333333;
+
+	/* Colours */
+	--color-primary: #00a86b;
+	--color-gradient-stop-1: var(--color-primary);
+	--color-gradient-stop-2: color(var(--color-primary) tint(74%));
+	--color-highlight: #f7faf9;
+	--color-shadow: #000;
+	--color-grey: #757575;
+	--color-grey-lighter: color(var(--color-grey) tint(54%));
+	--color-grey-light: color(var(--color-grey) tint(13.5%));
+	--color-grey-dark: color(var(--color-grey) shade(27%));
+	--color-background-page: var(--color-highlight);
+	--color-text: var(--color-grey-dark);
+	--color-text-light: var(--color-grey-light);
+	--color-text-dark: var(--color-shadow);
+	--color-link: var(--color-primary);
+	--color-border: color(var(--color-grey-lighter) tint(30%));
+	--color-border-dark: color(var(--color-grey-lighter) shade(20%));
+	--color-border-link: var(--color-primary);
+
+	/* Typography */
+	--font-family-fallback: Georgia, Times, 'Times New Roman', serif;
+	--font-family: 'Source Serif Pro', var(--font-family-fallback);
+	--font-family-monospace: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	--font-size: 17;
+	--font-size-medium: 23;
+	--line-height: 1.4117647059; /* 24 / 17 */
+	--line-height-small: 1.568627451; /* 20 / 12.75 */
+	--line-height-heading: 1.3235274654; /* 30 / 22.6667 */
+	--font-variant: diagonal-fractions slashed-zero;
+
+	/* Spacing */
+	--space-none: 0;
+	--space-xxs: calc(var(--line-height) / 8 * 1rem);
+	--space-xs: calc(var(--line-height) / 4 * 1rem);
+	--space-s: calc(var(--line-height) / 2 * 1rem);
+	--space-m: calc(var(--line-height) * 1rem);
+	--space-l: calc(var(--line-height) * 2rem);
+	--space-xl: calc(var(--line-height) * 4rem);
+	--space-xxl: calc(var(--line-height) * 8rem);
+	--space-xxxl: calc(var(--line-height) * 16rem);
+
+	/* Border */
+	--border-width: 1px;
+	--border: var(--border-width) solid var(--color-border);
+	--border-dotted: var(--border-width) dotted var(--color-border-dark);
+
+	/* Widths */
+	--max-width-container: 660px;
+
+	/* Animation */
+	--delay: 0.1s;
+	--easing: ease-out;
+}

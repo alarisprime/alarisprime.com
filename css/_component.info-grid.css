@@ -1,0 +1,26 @@
+.info-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(var(--space-xl), 1fr));
+	grid-gap: var(--space-xs);
+	padding: 0;
+
+	& li {
+		list-style-type: none;
+		font-size: ms(-1) em;
+		line-height: var(--line-height-heading);
+
+		@supports (display: grid) {
+			margin-top: 0;
+		}
+
+		& * + * {
+			margin-top: 0;
+		}
+	}
+
+	& h3 {
+		color: var(--color-text-light);
+		font-weight: normal;
+		font-variant-caps: small-caps;
+	}
+}

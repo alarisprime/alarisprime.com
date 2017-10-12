@@ -3,31 +3,22 @@ description: We design and build products for beauty and performance.
 ---
 
 {% extends "./layouts/base.njk" %}
-
-{% from "./macros/contact-trigger-tag.njk" import contactTriggerTag %}
-{% from "./macros/divider.njk" import divider %}
 {% from "./macros/testimonials.njk" import testimonials %}
 
 {% block content %}
-<div class="hero-quote">
-	<div class="hero-quote__inner">
-		<blockquote class="hero-quote__quote">{{ description }}</blockquote>
-	</div>
-</div>
-<div class="hero">
-	<div class="hero__text-unit">
-		<p>We have helped
-			<a class="link link--minor" href="http://www.adya.io/">Adya</a>,
-			<a class="link link--minor" href="https://www.zoho.com/">Zoho</a>,
-			<a class="link link--minor" href="http://adityabirla.com/">Aditya Birla</a>,
-			<a class="link link--minor" href="http://www.razorfish.com/">Razorfish</a>,
-			and others.
-		</p>
-		<br>
-		<p>{{ contactTriggerTag(isButton=true, text = 'Let us help you on your next project', email = site.contactEmail) }}</p>
-	</div>
-</div>
-
-{{ divider() }}
+<section class="hero">
+	<h1 class="hero__title">
+		{{description}}
+	</h1>
+	<p>We have helped
+		<a href="http://www.adya.io/">Adya</a>,
+		<a href="https://www.zoho.com/">Zoho</a>,
+		<a href="http://adityabirla.com/">Aditya Birla</a>,
+		<a href="http://www.razorfish.com/">Razorfish</a>,
+		and
+		<a href="/work">others</a>.
+	</p>
+</section>
+<hr>
 {{ testimonials(collections.testimonials) }}
 {% endblock %}
