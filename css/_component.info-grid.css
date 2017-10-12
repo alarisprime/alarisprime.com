@@ -1,16 +1,18 @@
 .info-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(var(--space-xl), 1fr));
-	grid-gap: var(--space-xs);
+	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 
 	& li {
+		width: calc(100% / 2);
+		margin-top: 0;
+		margin-bottom: var(--space-s);
 		list-style-type: none;
 		font-size: ms(-1) em;
 		line-height: var(--line-height-heading);
 
-		@supports (display: grid) {
-			margin-top: 0;
+		@media (--m-up) {
+			width: calc(100% / 3);
 		}
 
 		& * + * {
