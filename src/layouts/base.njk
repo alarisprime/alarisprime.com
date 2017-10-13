@@ -10,7 +10,7 @@
 		{% endblock %}
 
 		{% if description %}
-		<meta name="description" content="{{ description }}">
+		<meta name="description" content="{{ description | replace(" ", " ") }}">
 		{% endif %}
 
 		{% if not disableOgMetaTags %}
