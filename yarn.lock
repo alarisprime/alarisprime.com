@@ -321,7 +321,7 @@ autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
-autoprefixer@^7.1.1, autoprefixer@^7.1.2:
+autoprefixer@^7.1.1, autoprefixer@^7.1.2, autoprefixer@^7.1.5:
   version "7.1.5"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.5.tgz#d65d14b83c7cd1dd7bc801daa00557addf5a06b2"
   dependencies:
@@ -330,17 +330,6 @@ autoprefixer@^7.1.1, autoprefixer@^7.1.2:
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^6.0.13"
-    postcss-value-parser "^3.2.3"
-
-autoprefixer@^7.1.4:
-  version "7.1.4"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.4.tgz#960847dbaa4016bc8e8e52ec891cbf8f1257a748"
-  dependencies:
-    browserslist "^2.4.0"
-    caniuse-lite "^1.0.30000726"
-    normalize-range "^0.1.2"
-    num2fraction "^1.2.2"
-    postcss "^6.0.11"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -1421,13 +1410,6 @@ browserslist@^2.1.2:
     caniuse-lite "^1.0.30000704"
     electron-to-chromium "^1.3.16"
 
-browserslist@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.4.0.tgz#693ee93d01e66468a6348da5498e011f578f87f8"
-  dependencies:
-    caniuse-lite "^1.0.30000718"
-    electron-to-chromium "^1.3.18"
-
 bs-recipes@1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/bs-recipes/-/bs-recipes-1.3.4.tgz#0d2d4d48a718c8c044769fdc4f89592dc8b69585"
@@ -1557,10 +1539,6 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000744:
 caniuse-lite@^1.0.30000704:
   version "1.0.30000709"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000709.tgz#e027c7a0dfd5ada58f931a1080fc71965375559b"
-
-caniuse-lite@^1.0.30000718, caniuse-lite@^1.0.30000726:
-  version "1.0.30000733"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000733.tgz#ebfc48254117cc0c66197a4536cb4397a6cfbccd"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -2222,7 +2200,7 @@ debug@^2.1.1, debug@^2.2.0:
   dependencies:
     ms "0.7.2"
 
-debug@^3.0.0, debug@^3.1.0:
+debug@^3.0.0, debug@^3.1.0, debug@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -2237,12 +2215,6 @@ debug@^3.0.1:
 debug@~0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
-
-debug@~3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.0.0.tgz#1d2feae53349047b08b264ec41906ba17a8516e4"
-  dependencies:
-    ms "2.0.0"
 
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
@@ -2436,10 +2408,6 @@ electron-to-chromium@^1.2.7:
 electron-to-chromium@^1.3.16:
   version "1.3.16"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.16.tgz#d0e026735754770901ae301a21664cba45d92f7d"
-
-electron-to-chromium@^1.3.18:
-  version "1.3.21"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.21.tgz#a967ebdcfe8ed0083fc244d1894022a8e8113ea2"
 
 electron-to-chromium@^1.3.24:
   version "1.3.24"
@@ -5109,11 +5077,11 @@ metalsmith-engine-jstransformer@^0.1.2:
     is-utf8 "^0.2.1"
     jstransformer "^1.0.0"
 
-metalsmith-hyphenate@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/metalsmith-hyphenate/-/metalsmith-hyphenate-1.0.1.tgz#2ac66cec3fb5b9f394a946762285f91df9476d25"
+metalsmith-hyphenate@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/metalsmith-hyphenate/-/metalsmith-hyphenate-1.0.2.tgz#1638c6a767da769cf9e6d2f1679d4c70b78bd533"
   dependencies:
-    debug "~3.0.0"
+    debug "~3.1.0"
     hyphenation.en-us "~0.2.1"
     hypher "~0.2.5"
     minimatch "~3.0.4"
@@ -7097,9 +7065,9 @@ run-async@^2.2.0:
   dependencies:
     is-promise "^2.1.0"
 
-run-sequence@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/run-sequence/-/run-sequence-2.1.0.tgz#149da012516f21dcf79db6dc99a2a95603631b21"
+run-sequence@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/run-sequence/-/run-sequence-2.2.0.tgz#b3f8d42836db89d08b2fe704eaf0c93dfd8335e2"
   dependencies:
     chalk "^1.1.3"
     gulp-util "^3.0.8"
@@ -8325,9 +8293,9 @@ webpack-sources@^1.0.1:
     source-list-map "^2.0.0"
     source-map "~0.5.3"
 
-webpack@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.6.0.tgz#a89a929fbee205d35a4fa2cc487be9cbec8898bc"
+webpack@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.8.0.tgz#36ed73aa62e86959fbc9b7b3a90f0f094e672708"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
