@@ -8,8 +8,6 @@
 		margin-top: 0;
 		margin-bottom: var(--space-s);
 		list-style-type: none;
-		font-size: ms(-1) em;
-		line-height: var(--line-height-heading);
 
 		@media (--m-up) {
 			width: calc(100% / 3);
@@ -24,5 +22,10 @@
 		color: var(--color-text-light);
 		font-weight: normal;
 		font-variant-caps: small-caps;
+
+		@media (--m-up) {
+			font-size: ms(-1) em;
+			line-height: var(--line-height-heading);
+		}
 	}
 }
