@@ -1,6 +1,4 @@
 .testimonial {
-	@apply --container;
-
 	position: relative;
 
 	&::before {
