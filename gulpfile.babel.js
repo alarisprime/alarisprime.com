@@ -187,6 +187,7 @@ gulp.task('useref', () => {
 gulp.task('assets-rev', () => {
 	return gulp.src([
 		'./dist/images/*',
+		'./dist/fonts/*',
 		'./dist/scripts/*.js',
 		'./dist/css/*.css'
 	], {base: './dist/'})
