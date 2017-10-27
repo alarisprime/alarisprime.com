@@ -9,7 +9,13 @@
 	}
 }
 
-.hero__title {
+.hero__quote {
+	font-size: ms(2) em;
 	font-weight: bold;
+	line-height: var(--line-height-heading);
 	text-align: left;
+
+	@media (--m-up) {
+		font-size: ms(3) em;
+	}
 }
