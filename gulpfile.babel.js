@@ -74,6 +74,11 @@ gulp.task('metalsmith', cb => {
 			}
 		}))
 		.use(require('metalsmith-permalinks')())
+		.use(require('metalsmith-sitemap')({
+			hostname: siteConfig.baseUrl,
+			priority: 0.5,
+			changefreq: 'weekly'
+		}))
 		.use(require('metalsmith-hyphenate')({
 			elements: ['p', 'figcaption', 'li', 'ol']
 		}))
@@ -137,24 +142,6 @@ gulp.task('copy:images', () => {
 
 gulp.task('copy', ['copy:root', 'copy:images']);
 
-gulp.task('sitemap', () => {
-	return gulp.src('dist/**/*.njk', {
-		read: false
-	})
-	.pipe($.filter([
-		'**',
-		'!dist/thanks/*.html'
-	]))
-	// .pipe($.print())
-	.pipe($.sitemap({
-		siteUrl: siteConfig.baseUrl,
-		lastmod: false,
-		changefreq: 'weekly',
-		priority: 0.5
-	}))
-	.pipe(gulp.dest('./dist'));
-});
-
 gulp.task('lint:scripts', () => {
 	return gulp.src([
 		'scripts/**/*.js',
@@ -164,6 +151,12 @@ gulp.task('lint:scripts', () => {
 });
 
 gulp.task('lint', ['lint:scripts']);
+
+gulp.task('sitemap', () => {
+	gulp.src(['dist/sitemap.xml'])
+		.pipe($.replace('index.html', ''))
+		.pipe(gulp.dest('dist'));
+});
 
 gulp.task('useref', () => {
 	const userefConfig = {
