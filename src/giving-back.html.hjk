@@ -1,0 +1,20 @@
+---
+title: Giving Back
+---
+
+{% extends "./layouts/base.njk" %}
+
+{% block content %}
+<article class="article">
+  <h1 class="article__title">Giving Back</h1>
+  <div class="article__content article__content--column">
+    <p>​​We do commercial design and advanced front-end engineering at Alaris Prime. We want to give it back to the community by helping Startups, with their design needs.</p>
+    <p>​​Get your FREE Consultation on Visual Design, Experience Design and Product Design.</p>
+    <p>Accepting Bangalore Startups with less than $M in funding.</p>
+    <p>Terms and Conditions Apply. We reserve all rights to our choice of Startups to work with.</p>
+  </div>
+  <div class="article__content article__content--column">
+    <p><a href="https://goo.gl/forms/goPHxgWjbPq1gxLR2">Apply</a></p>
+  </div>
+</article>
+{% endblock %}
