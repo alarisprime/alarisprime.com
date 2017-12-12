@@ -186,3 +186,9 @@ hr {
 #main {
 	min-height: 50.015104562vh; /* 100/1.414^2 */
 }
+
+.minor {
+	color: var(--color-text-light);
+	font-size: ms(-1) em;
+	line-height: var(--line-height-heading);
+}
