@@ -70,7 +70,8 @@ gulp.task('metalsmith', cb => {
 		.use(require('metalsmith-in-place')({
 			engineOptions: {
 				cache: false,
-				noCache: true
+				noCache: true,
+				root: `${__dirname}/src`
 			}
 		}))
 		.use(require('metalsmith-permalinks')())
