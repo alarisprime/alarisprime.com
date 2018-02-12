@@ -21,7 +21,7 @@
   "license": "CC0 1.0 Universal",
   "homepage": "https://alarisprime.com",
   "dependencies": {
-    "autoprefixer": "^7.2.4",
+    "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "7.1.2",
     "babel-preset-es2015": "6.24.1",
