@@ -1,6 +1,7 @@
 import path from 'path';
 
 module.exports = {
+	mode: 'production',
 	entry: path.join(__dirname, './scripts/entry.js'),
 	output: {
 		path: path.join(__dirname, './dist/scripts/'),
