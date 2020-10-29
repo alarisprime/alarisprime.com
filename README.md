@@ -1,7 +1,8 @@
-# alarisprime.com
+# Alaris Prime
 
-[![Build Status](https://travis-ci.org/alarisprime/alarisprime.com.svg?branch=master)](https://travis-ci.org/alarisprime/alarisprime.com)
+> We design and build products for beauty and performance.
 
+[alarisprime.com](https://alarisprime.com/)
 
 ## Development
 
