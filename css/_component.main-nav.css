@@ -1,6 +1,7 @@
 .main-nav {
 	max-width: var(--max-width-container);
 	margin: 0 auto;
+	padding-bottom: var(--space-m);
 	color: var(--color-grey-lighter);
 }
 
